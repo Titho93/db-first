@@ -4,6 +4,7 @@
 - make ---------------- VARCHAR(20) - NOT NULL
 - model --------------- VARCHAR(30) - NOT NULL
 - variant -------------- VARCHAR(50) - NOT NULL
+- horsepower --------- SMALLMINT - NOT NULL
 - exterior_color ------- VARCHAR(30) - NULL
 - interior_color -------- VARCHAR(30) - NULL
 - Upholstery ---------- VARCHAR(15) - NULL
@@ -15,8 +16,9 @@
 - gear ---------------- VARCHAR(15) - NOT NULL
 - doors_number ------ TINYINT - NULL
 - seats_number ------ TINYINT - NULL
+- air_conditioning ---- TINYINT DEFAULT(0) - NULL
 - condition ----------- TINYINT - NOT NULL
 - traction ------------- CHAR(3) - NULL
 - optionals ------------ VARCHAR() - NULL
-- car_license_plate ---- VARCHAR(10) - NOT NULL
-- frame_number ------- CHAR(17) - NOT NULL
+- car_license_plate ---- VARCHAR(10) - NOT NULL - UNIQUE
+- frame_number ------- CHAR(17) - NOT NULL - UNIQUE
