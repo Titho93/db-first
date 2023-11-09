@@ -1,20 +1,22 @@
 # Cars
 
-- id | INT - AUTO INCREMENT- NOT NULL - PRIMARY KEY
-- make
-- model
-- variant
-- exterior_color
-- interior_color
-- Upholstery
-- body_type
-- fuel_type
-- year
-- price
-- countries
-- gear
-- doors_number
-- seats_number
-- condition
-- traction
-- optionals
+- id -------------------- INT - AUTO INCREMENT- NOT NULL - PRIMARY KEY
+- make ---------------- VARCHAR(20) - NOT NULL
+- model --------------- VARCHAR(30) - NOT NULL
+- variant -------------- VARCHAR(50) - NOT NULL
+- exterior_color ------- VARCHAR(30) - NULL
+- interior_color -------- VARCHAR(30) - NULL
+- Upholstery ---------- VARCHAR(15) - NULL
+- body_type ---------- VARCHAR(15) - NULL
+- fuel_type ----------- VARCHAR(20) - NOT NUL
+- year ---------------- YEAR - NOT NULL
+- price --------------- DOUBLE(11, 2) - NOT NULL
+- countries ----------- CHAR(3) - NOT NULL
+- gear ---------------- VARCHAR(15) - NOT NULL
+- doors_number ------ TINYINT - NULL
+- seats_number ------ TINYINT - NULL
+- condition ----------- TINYINT - NOT NULL
+- traction ------------- CHAR(3) - NULL
+- optionals ------------ VARCHAR() - NULL
+- car_license_plate ---- VARCHAR(10) - NOT NULL
+- frame_number ------- CHAR(17) - NOT NULL
